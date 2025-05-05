@@ -46,7 +46,7 @@ function ReferralTracking() {
 	// const progressValue = (score * 100 / maxScore);
 	const progressValue = (score * 100 / maxScore).toFixed(2); 
 	const abc=(score / maxScore).toFixed(2); 
-
+	console.log("avg sentiment is ", abc);
 
 	return (
 		<Card
