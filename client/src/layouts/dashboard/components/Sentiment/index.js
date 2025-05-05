@@ -45,6 +45,7 @@ function ReferralTracking() {
 	// Calculate the progress value
 	// const progressValue = (score * 100 / maxScore);
 	const progressValue = (score * 100 / maxScore).toFixed(2); 
+	const abc=(score / maxScore).toFixed(2); 
 
 
 	return (
@@ -146,7 +147,7 @@ function ReferralTracking() {
 							</VuiTypography>
 							<VuiTypography color='white' variant='lg' fontWeight='bold'>
 								// {score/maxScore}
-								{(score/ maxScore).toFixed(2)}
+								{abc}
 							</VuiTypography>
 						</VuiBox>
 					</Stack>
@@ -183,7 +184,7 @@ function ReferralTracking() {
 										}
 									})}>
 									// {score/maxScore}
-									{(score/ maxScore).toFixed(2)}
+									{abc}
 								</VuiTypography>
 								<VuiTypography color='text' variant='button'>
 									Value 
