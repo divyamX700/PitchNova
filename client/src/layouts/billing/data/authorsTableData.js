@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-const BASE_URL = "https://pitchnova.onrender.com"; 
+const BASE_URL = "https://pitchnova.onrender.com/api/v1"; 
 
 // -------------------- Main Hook for Table Rows --------------------
 function useCustomerData() {
