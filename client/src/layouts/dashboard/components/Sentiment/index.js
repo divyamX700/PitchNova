@@ -146,7 +146,6 @@ function ReferralTracking() {
 								Average Sentiment Score
 							</VuiTypography>
 							<VuiTypography color='white' variant='lg' fontWeight='bold'>
-								// {score/maxScore}
 								{abc}
 							</VuiTypography>
 						</VuiBox>
@@ -183,7 +182,6 @@ function ReferralTracking() {
 											fontSize: '32px'
 										}
 									})}>
-									// {score/maxScore}
 									{abc}
 								</VuiTypography>
 								<VuiTypography color='text' variant='button'>
