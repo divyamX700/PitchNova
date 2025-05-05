@@ -47,7 +47,9 @@ function ReferralTracking() {
 	}, []);
 
 	// Calculate the progress value
-	const progressValue = (score * 100 / maxScore);
+	// const progressValue = (score * 100 / maxScore);
+	const progressValue = (score * 100 / maxScore).toFixed(2); // returns a string like "87.65"
+
 
 
 	return (
