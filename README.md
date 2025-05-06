@@ -116,9 +116,14 @@ This comprehensive solution provides critical business intelligence to optimize 
 
 *This section will showcase images of the PitchNova platform in action, including the dashboard, call interface, and analytics views.*
 
-![Dashboard Overview](https://via.placeholder.com/800x450?text=PitchNova+Dashboard)
-![Call Interface](https://via.placeholder.com/800x450?text=PitchNova+Call+Interface)
-![Analytics View](https://via.placeholder.com/800x450?text=PitchNova+Analytics)
+## Dashboard Overview
+<img src="https://drive.google.com/uc?export=view&id=1yTvQXnkmeissonhT7upAFrUKYcO3lBov" width="800"/>
+
+## Call Summary Overview
+<img src="https://drive.google.com/uc?export=view&id=1-Un6SHmXbmKswAsGx4GYWFBugS8F35YR" width="800"/>
+
+## Call Chat Overview
+<img src="https://drive.google.com/uc?export=view&id=1CKwZMeQTjVS8XhEEQKW-AXGNh8K1gHxb" width="800"/>
 
 ---
 
