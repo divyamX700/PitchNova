@@ -1,44 +1,73 @@
-# AI-Powered Cold Calling Sales Agent
+# PitchNova: AI-Powered Cold Calling Sales Agent
 
-Welcome to the AI-Powered Cold Calling Sales Agent repository! This project implements an intelligent phone agent capable of conducting natural-sounding sales conversations, analyzing customer responses in real-time, and converting leads into sales opportunities.
+![PitchNova Logo](https://via.placeholder.com/800x200?text=PitchNova)
 
+PitchNova is an intelligent phone agent that conducts natural-sounding sales conversations, analyzes customer responses in real-time, processes inventory orders, and converts leads into sales opportunities with remarkable efficiency.
+
+## 🌟 Live Deployment
+
+Experience PitchNova in action:
+- **Front-end:** [https://pitch-nova.vercel.app/](https://pitch-nova.vercel.app/)
+- **Back-end API:** [https://pitchnova.onrender.com/](https://pitchnova.onrender.com/)
+- **Python ML Model:** [https://pitchnovamodel.onrender.com/](https://pitchnovamodel.onrender.com/)
 
 ## 📋 Overview
 
-This AI Sales Agent is a full-stack intelligent sales system designed to seamlessly integrate into existing sales pipelines. The system leverages advanced natural language processing, voice synthesis, and real-time analytics to create personalized and effective cold calling experiences.
+PitchNova is a full-stack intelligent sales system designed to seamlessly integrate into existing sales pipelines. The system leverages advanced natural language processing, voice synthesis, and real-time analytics to create personalized and effective cold calling experiences.
 
-The agent can:
+### What PitchNova Can Do:
 
 - Initiate outbound calls to potential customers
 - Conduct natural, flowing conversations
+- Process and fulfill inventory orders in real-time
 - Adapt its approach based on customer responses
 - Provide personalized product recommendations
-- Schedule follow-up actions and store conversation insights
+- Generate detailed call summaries and insights
+- Update inventory levels automatically
+- Schedule follow-up actions
 
 ---
 
-## Features
+## ✨ Key Features
 
-### 🗣️Voice Intelligence
+### 🗣️ Voice Intelligence
 
 - Real-time speech-to-text processing
 - Natural-sounding text-to-speech using Eleven Labs
 - Dynamic conversation flow with contextual understanding
 - Emotion and sentiment analysis during calls
 
+### 📊 Business Intelligence & Analytics
 
-### 📊 Business Intelligence
-
+- Comprehensive dashboard showing call success metrics
+- Sentiment score tracking and analysis
+- Month-wise customer engagement statistics
+- Inventory management with real-time updates
 - Product matching based on detected customer needs
 - Objection handling with adaptive responses
 - Conversion optimization through continuous learning
 
-
 ### 💻 Technical Capabilities
 
 - Secure API handling with environment variable protection
+- Advanced order processing and inventory management
+- Call summary generation with actionable insights
+- Rich analytics dashboard for business intelligence
 - Flask-based backend for robust request handling
-- Frontend dashboard for call monitoring and analytics
+
+---
+
+## 🛠️ Technology Stack
+
+PitchNova leverages cutting-edge technologies to deliver exceptional performance:
+
+- **Voice Services:** Twilio for call handling and telephony
+- **Text-to-Speech:** Eleven Labs for ultra-realistic voice synthesis
+- **AI Processing:** Groq for high-performance API responses
+- **Frontend:** React with modern UI/UX principles
+- **Backend:** Flask/Python API services
+- **Machine Learning:** Custom trained models for sentiment analysis and conversation intelligence
+- **Database:** MongoDB for data persistence (planned expansion)
 
 ---
 
@@ -47,29 +76,18 @@ The agent can:
 ### 📋 Prerequisites
 
 - Python 3.8 or higher
-- MongoDB instance (planned for future implementation)
+- MongoDB instance
 - Twilio account
 - Eleven Labs API key
-
----
+- Groq API access
 
 ### 🔧 Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/electrify-7/AI-Agent.git
-cd AI-Agent
+git clone https://github.com/yourusername/PitchNova.git
+cd PitchNova
 ```
-<!--
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-```
--->
 
 2. Install dependencies:
 ```bash
@@ -100,24 +118,24 @@ TWILIO_FROM_NUMBER=your_twilio_number
 MONGO_URI=your_mongodb_connection_string
 DATABASE_NAME=your_database_name
 
-# OpenAI API Credentials
-OPENAI_API_KEY=your_openai_api_key
+# Groq API Credentials
+GROQ_API_KEY=your_groq_api_key
 
 # Eleven Labs API Credentials
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
 VOICE_ID=your_selected_voice_id
 
 # Company Details
-COMPANY_NAME="Enter Company Name"
-COMPANY_BUSINESS="Enter company business description"
-COMPANY_PRODUCTS_SERVICES="Enter product/service descriptions"
-CONVERSATION_PURPOSE="Enter the primary goal of sales conversations"
-AISALESAGENT_NAME="Enter Agent Name"
+COMPANY_NAME="Your Company Name"
+COMPANY_BUSINESS="Your company business description"
+COMPANY_PRODUCTS_SERVICES="Your product/service descriptions"
+CONVERSATION_PURPOSE="Primary goal of sales conversations"
+AISALESAGENT_NAME="Your Agent Name"
 ```
 
 ---
 
-## Usage
+## 📱 Usage
 
 ### Starting the Server
 
@@ -133,101 +151,85 @@ The server will start on the default port (5000) unless configured otherwise.
 
 1. Ensure your Twilio webhook URLs are properly configured to point to your deployed application
 2. Use the Twilio console to initiate test calls or integrate with the API
-3. Monitor call logs and conversation transcripts in the frontend dashboard
+3. Monitor call logs, conversation transcripts, and inventory updates in the dashboard
 
 ---
 
 ## 🔌 API Endpoints
 
-The system exposes several API endpoints:
-
+PitchNova exposes several API endpoints:
 
 | Endpoint | Method | Description |
 | :-- | :-- | :-- |
 | `/call/incoming` | POST | Handles incoming call webhooks from Twilio |
 | `/call/status` | POST | Processes call status updates |
 | `/transcribe` | POST | Converts speech to text for processing |
-| `/generate-response` | POST | Creates AI responses based on conversation context |
-| `/text-to-speech` | POST | Converts text responses to natural speech |
+| `/generate-response` | POST | Creates AI responses using Groq APIs |
+| `/text-to-speech` | POST | Converts text responses to natural speech via Eleven Labs |
+| `/inventory/update` | POST | Updates inventory after successful orders |
+| `/call/summary` | GET | Retrieves AI-generated call summaries |
+| `/analytics/dashboard` | GET | Fetches analytics for the dashboard |
 
 ---
 
-## Customization
+## 📊 Analytics Dashboard
 
-### Agent Personality
+PitchNova includes a comprehensive analytics dashboard that provides:
 
-Modify the agent's personality and conversation style by updating the prompt templates in the configuration files. The system supports different personas for various sales contexts.
+- **Call Success Ratio:** Track successful vs. unsuccessful calls
+- **Sentiment Analysis:** Average sentiment scores across all calls
+- **Inventory Management:** Real-time tracking of sold and available inventory
+- **Customer Engagement:** Month-wise visualization of customer interactions
+- **Performance Metrics:** Conversion rates, talk time, and objection statistics
+- **Order Summaries:** Detailed breakdowns of processed orders
 
-### Product Information
-
-Update the `COMPANY_PRODUCTS_SERVICES` environment variable with detailed product information to enable the agent to provide accurate recommendations and answers.
-
-### Conversation Flows
-
-The conversation logic can be customized by modifying the AI prompt templates and conversation handlers in the codebase.
-<!--
----
-
-## Security
-
-This system handles sensitive customer information and requires proper security measures:
-
-- All API keys should be kept secure in environment variables
-- Implement proper authentication for API endpoints
-- Ensure GDPR and other regulatory compliance for call recording and data storage
-- Regularly rotate API keys and access credentials
+The dashboard provides critical business intelligence to optimize your sales strategy and inventory management.
 
 ---
 
-## Troubleshooting
+## 🖼️ Screenshots
 
-### Common Issues
+*This section will showcase images of the PitchNova platform in action, including the dashboard, call interface, and analytics views.*
 
-1. **Voice quality issues**: Check Eleven Labs configuration and voice selection
-2. **Slow response times**: Optimize OpenAI API calls and implement caching
-3. **Call connection failures**: Verify Twilio credentials and webhook configurations
-4. **Database connection errors**: Check MongoDB connection string and network access
--->
----
-
-### Frontend Dashboard
-
-The project includes a basic frontend dashboard that allows you to:
-
-- View ongoing and completed calls
-- Access conversation transcripts
-- Analyze call performance metrics
-- Manage agent configurations
-
-<p>Note: The frontend is currently a basic implementation. Database integration and advanced analytics features are planned for future development.</p>
+![Dashboard Overview](https://via.placeholder.com/800x450?text=PitchNova+Dashboard)
+![Call Interface](https://via.placeholder.com/800x450?text=PitchNova+Call+Interface)
+![Analytics View](https://via.placeholder.com/800x450?text=PitchNova+Analytics)
 
 ---
 
-## Future Development
+## 🔄 Order Processing & Inventory Management
 
-- Complete MongoDB integration for data persistence
-- Enhanced analytics dashboard with call performance metrics
-- Multi-agent support for different product lines
-- Integration with CRM systems for lead management
-- Advanced conversation analytics and insights
+PitchNova excels at order processing during sales calls:
 
+1. **Real-time Inventory Check:** Verifies product availability during conversation
+2. **Order Placement:** Processes customer orders during the call
+3. **Summary Generation:** Creates detailed order summaries after call completion
+4. **Inventory Updates:** Automatically adjusts inventory levels based on sales
+5. **Dashboard Integration:** Shows real-time inventory status in the analytics dashboard
 
+This seamless integration between conversation intelligence and inventory management creates a truly end-to-end sales solution.
 
-[^1]: https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
+---
 
-[^2]: https://google.github.io/styleguide/docguide/style.html
+## 🛣️ Roadmap
 
-[^3]: https://www.markdownguide.org/hacks/
+- Enhanced CRM integration capabilities
+- Multi-language support for global sales operations
+- Advanced inventory forecasting using AI
+- Custom voice training for brand-specific agent voices
+- Mobile companion app for on-the-go analytics
 
-[^4]: https://docs.gitlab.com/ee/user/markdown.html
+---
 
-[^5]: https://www.jetbrains.com/help/hub/markdown-syntax.html
+## 📄 License
 
-[^6]: https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-[^7]: https://stackoverflow.com/questions/44610355/how-to-create-horizontal-line-in-markdown-using-hexo-framework
+---
 
-[^8]: https://www.shecodes.io/athena/98542-how-to-wrap-text-in-a-readme-file-using-markup
+## 🙏 Acknowledgments
 
-[^9]: https://css-tricks.com/little-stuff-markdown-always-forget-google/
-
+- Twilio for powerful telephony services
+- Eleven Labs for realistic voice synthesis
+- Groq for high-performance AI processing
+- All contributors who helped make PitchNova a reality
