@@ -89,7 +89,26 @@ PitchNova includes a comprehensive analytics dashboard that provides:
 - **Performance Metrics:** Conversion rates, talk time, and objection statistics
 - **Order Summaries:** Detailed breakdowns of processed orders
 
-The dashboard provides critical business intelligence to optimize your sales strategy and inventory management.
+### 💬 Call History & Conversation Analysis
+
+The dashboard features dedicated pages for reviewing complete call histories:
+
+- **Full Conversation Transcripts:** Access the complete chat history for every call made
+- **Call Summaries:** Review AI-generated summaries highlighting key points from each conversation
+- **Customer Insights:** Track customer preferences, objections, and buying signals
+- **Conversation Analytics:** Analyze conversation patterns and successful sales techniques
+
+### 🛒 Order Processing & Inventory Management
+
+PitchNova integrates seamless order processing within the dashboard:
+
+- **Real-time Inventory Check:** Verifies product availability during conversation
+- **Order Placement Tracking:** Monitors orders processed during calls
+- **Summary Generation:** Creates detailed order summaries after call completion
+- **Inventory Updates:** Automatically adjusts inventory levels based on sales
+- **Stock Management:** Shows real-time inventory status and alerts for low stock
+
+This comprehensive solution provides critical business intelligence to optimize your sales strategy, conversation quality, and inventory management.
 
 ---
 
@@ -100,20 +119,6 @@ The dashboard provides critical business intelligence to optimize your sales str
 ![Dashboard Overview](https://via.placeholder.com/800x450?text=PitchNova+Dashboard)
 ![Call Interface](https://via.placeholder.com/800x450?text=PitchNova+Call+Interface)
 ![Analytics View](https://via.placeholder.com/800x450?text=PitchNova+Analytics)
-
----
-
-## 🔄 Order Processing & Inventory Management
-
-PitchNova excels at order processing during sales calls:
-
-1. **Real-time Inventory Check:** Verifies product availability during conversation
-2. **Order Placement:** Processes customer orders during the call
-3. **Summary Generation:** Creates detailed order summaries after call completion
-4. **Inventory Updates:** Automatically adjusts inventory levels based on sales
-5. **Dashboard Integration:** Shows real-time inventory status in the analytics dashboard
-
-This seamless integration between conversation intelligence and inventory management creates a truly end-to-end sales solution.
 
 ---
 
