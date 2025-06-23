@@ -63,7 +63,7 @@ PitchNova leverages cutting-edge technologies to deliver exceptional performance
 - **Text-to-Speech:** Eleven Labs for ultra-realistic voice synthesis
 - **AI Processing:** Groq for high-performance API responses
 - **Frontend:** React with modern UI/UX principles
-- **Backend:** Flask/Python API services
+- **Backend:** Node.js, Express.js with MongoDB as Database
 - **Machine Learning:** Custom trained models for sentiment analysis and conversation intelligence
 - **Database:** MongoDB for data persistence 
 
