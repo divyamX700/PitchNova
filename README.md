@@ -200,7 +200,7 @@ COMPANY_NAME="Your Company Name"
 COMPANY_BUSINESS="Your company business description"
 COMPANY_PRODUCTS_SERVICES="Your product/service descriptions"
 CONVERSATION_PURPOSE="Primary goal of sales conversations"
-AISALESAGENT_NAME="Your Agent Name"
+AISALESAGENT_NAME="Your Agent's Name"
 ```
 
 ### Starting the Application
